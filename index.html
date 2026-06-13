@@ -8,51 +8,35 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=IBM+Plex+Mono:wght@300;400;500;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas id="matrix-bg"></canvas>
-    <div class="noise"></div>
-    <div class="vignette"></div>
-
     <nav class="nav">
-        <div class="nav-brand" data-glitch="SAWE">SAWE</div>
+        <div class="nav-brand">SAWE</div>
         <ul class="nav-links">
-            <li><a href="#about"><span class="nav-num">01</span>about</a></li>
-            <li><a href="#arsenal"><span class="nav-num">02</span>arsenal</a></li>
-            <li><a href="#ops"><span class="nav-num">03</span>ops</a></li>
-            <li><a href="#projects"><span class="nav-num">04</span>projects</a></li>
-            <li><a href="#intel"><span class="nav-num">05</span>intel</a></li>
-            <li><a href="#contact"><span class="nav-num">06</span>contact</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#arsenal">ARSENAL</a></li>
+            <li><a href="#ops">OPS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#intel">INTEL</a></li>
         </ul>
+        <a href="#contact" class="btn-primary">CONTACT</a>
         <button class="nav-toggle" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
+            <span></span><span></span>
         </button>
     </nav>
 
     <section class="hero" id="hero">
-        <div class="hero-grid">
-            <div class="hero-main">
-                <div class="hero-label">SOC ANALYST // CYBERSECURITY</div>
-                <h1 class="hero-name" data-glitch="LEWIS SAWE">
-                    <span class="hero-name-line">LEWIS</span>
-                    <span class="hero-name-line accent">SAWE</span>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="eyebrow">SOC ANALYST // CYBERSECURITY</span>
+                <h1 class="display-headline">
+                    <span>LEWIS</span>
+                    <span>SAWE</span>
                 </h1>
                 <div class="hero-terminal">
-                    <span class="term-prompt">&#9656;</span>
                     <span class="typed-text" id="hero-typed"></span>
-                    <span class="term-cursor"></span>
-                </div>
-            </div>
-            <div class="hero-side">
-                <div class="hero-radar">
-                    <div class="radar-ring"></div>
-                    <div class="radar-ring r2"></div>
-                    <div class="radar-ring r3"></div>
-                    <div class="radar-sweep"></div>
-                    <div class="radar-dot d1"></div>
-                    <div class="radar-dot d2"></div>
-                    <div class="radar-dot d3"></div>
+                    <span class="cursor"></span>
                 </div>
                 <div class="hero-metrics">
                     <div class="metric">
@@ -61,379 +45,348 @@
                     </div>
                     <div class="metric">
                         <span class="metric-val">9</span>
-                        <span class="metric-label">CTF WRITEUPS</span>
+                        <span class="metric-label">WRITEUPS</span>
                     </div>
                     <div class="metric">
                         <span class="metric-val">6</span>
-                        <span class="metric-label">SEC CERTS</span>
+                        <span class="metric-label">CERTS</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll-hint">
-            <span>SCROLL TO INVESTIGATE</span>
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <section class="section" id="about">
-        <div class="section-header">
-            <span class="section-tag">// THREAT PROFILE</span>
-            <h2 class="section-title reveal-text">About</h2>
-        </div>
-        <div class="about-layout">
-            <div class="about-text reveal-up">
-                <p class="lead">AWS Security Specialty certified professional who monitors threats, responds to incidents, and builds detection workflows.</p>
-                <p>I built the entire security posture for multiple SME clients from nothing: monthly assessments, IDS deployment, incident response procedures, endpoint protection. Zero security incidents since the audit.</p>
-                <p>Before that, I recovered a client from ransomware without paying a cent. Restored critical systems under pressure. Trained non-technical staff to recognize phishing.</p>
-                <p>I train on TryHackMe and HackTheBox to stay sharp. SOC Level 1 & 2 certified, completed the HTB SOC Analyst path. The work is real: Splunk queries, MITRE ATT&CK mapping, log analysis, malware triage.</p>
-            </div>
-            <div class="about-card reveal-up" style="--delay: 0.2s">
-                <div class="card-chrome">
-                    <span class="card-dot"></span>
-                    <span class="card-dot"></span>
-                    <span class="card-dot"></span>
-                    <span class="card-filename">threat_profile.json</span>
+        <div class="section-inner">
+            <span class="eyebrow accent">THREAT PROFILE</span>
+            <h2 class="heading reveal-up">About</h2>
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p class="body-lead">AWS Security Specialty certified professional who monitors threats, responds to incidents, and builds detection workflows.</p>
+                    <p>I built the entire security posture for multiple SME clients from nothing: monthly assessments, IDS deployment, incident response procedures, endpoint protection. Zero security incidents since the audit.</p>
+                    <p>Before that, I recovered a client from ransomware without paying a cent. Restored critical systems under pressure. Trained non-technical staff to recognize phishing.</p>
+                    <p>I train on TryHackMe and HackTheBox to stay sharp. SOC Level 1 & 2 certified, completed the HTB SOC Analyst path. The work is real: Splunk queries, MITRE ATT&CK mapping, log analysis, malware triage.</p>
                 </div>
-                <pre class="card-code"><span class="json-key">"name"</span>: <span class="json-val">"Lewis Sawe"</span>,
-<span class="json-key">"location"</span>: <span class="json-val">"Kenya (UTC+3)"</span>,
-<span class="json-key">"clearance"</span>: <span class="json-val">"AWS Security Specialty"</span>,
-<span class="json-key">"threat_level"</span>: <span class="json-val">"to adversaries: HIGH"</span>,
-<span class="json-key">"focus"</span>: [
-  <span class="json-val">"Threat Detection"</span>,
-  <span class="json-val">"Incident Response"</span>,
-  <span class="json-val">"Cloud Security"</span>,
-  <span class="json-val">"Network Defense"</span>
-],
-<span class="json-key">"status"</span>: <span class="json-val">"ACTIVE"</span></pre>
+                <div class="about-card reveal-up">
+                    <pre class="card-code"><span class="key">"name"</span>: <span class="val">"Lewis Sawe"</span>
+<span class="key">"location"</span>: <span class="val">"Kenya (UTC+3)"</span>
+<span class="key">"clearance"</span>: <span class="val">"AWS Security Specialty"</span>
+<span class="key">"threat_level"</span>: <span class="val">"to adversaries: HIGH"</span>
+<span class="key">"focus"</span>: [
+  <span class="val">"Threat Detection"</span>,
+  <span class="val">"Incident Response"</span>,
+  <span class="val">"Cloud Security"</span>,
+  <span class="val">"Network Defense"</span>
+]
+<span class="key">"status"</span>: <span class="val">"ACTIVE"</span></pre>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-dark" id="arsenal">
-        <div class="section-header">
-            <span class="section-tag">// CAPABILITIES</span>
-            <h2 class="section-title reveal-text">Arsenal</h2>
-        </div>
-        <div class="arsenal-grid">
-            <div class="arsenal-item reveal-up" style="--delay: 0s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
+    <section class="section" id="arsenal">
+        <div class="section-inner">
+            <span class="eyebrow accent">CAPABILITIES</span>
+            <h2 class="heading reveal-up">Arsenal</h2>
+            <div class="arsenal-grid">
+                <div class="arsenal-item reveal-up">
+                    <h3>SIEM & Detection</h3>
+                    <ul>
+                        <li>Splunk</li>
+                        <li>ELK Stack</li>
+                        <li>CloudWatch / CloudTrail</li>
+                        <li>GuardDuty</li>
+                        <li>Wireshark</li>
+                        <li>Windows Event Logs</li>
+                    </ul>
                 </div>
-                <h3>SIEM & Detection</h3>
-                <ul>
-                    <li>Splunk</li>
-                    <li>ELK Stack</li>
-                    <li>CloudWatch / CloudTrail</li>
-                    <li>GuardDuty</li>
-                    <li>Wireshark</li>
-                    <li>Windows Event Logs</li>
-                </ul>
-            </div>
-            <div class="arsenal-item reveal-up" style="--delay: 0.1s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="arsenal-item reveal-up">
+                    <h3>Incident Response</h3>
+                    <ul>
+                        <li>MITRE ATT&CK Framework</li>
+                        <li>Threat Hunting</li>
+                        <li>Malware Analysis</li>
+                        <li>Digital Forensics</li>
+                        <li>Log Analysis</li>
+                        <li>Incident Triage</li>
+                    </ul>
                 </div>
-                <h3>Incident Response</h3>
-                <ul>
-                    <li>MITRE ATT&CK Framework</li>
-                    <li>Threat Hunting</li>
-                    <li>Malware Analysis</li>
-                    <li>Digital Forensics</li>
-                    <li>Log Analysis</li>
-                    <li>Incident Triage</li>
-                </ul>
-            </div>
-            <div class="arsenal-item reveal-up" style="--delay: 0.2s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                <div class="arsenal-item reveal-up">
+                    <h3>Network Security</h3>
+                    <ul>
+                        <li>Firewalls / IDS / IPS</li>
+                        <li>VPN / VLAN Segmentation</li>
+                        <li>Packet Analysis</li>
+                        <li>Network Monitoring</li>
+                        <li>Endpoint Protection</li>
+                        <li>Vulnerability Assessment</li>
+                    </ul>
                 </div>
-                <h3>Network Security</h3>
-                <ul>
-                    <li>Firewalls / IDS / IPS</li>
-                    <li>VPN / VLAN Segmentation</li>
-                    <li>Packet Analysis</li>
-                    <li>Network Monitoring</li>
-                    <li>Endpoint Protection</li>
-                    <li>Vulnerability Assessment</li>
-                </ul>
-            </div>
-            <div class="arsenal-item reveal-up" style="--delay: 0.3s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                <div class="arsenal-item reveal-up">
+                    <h3>Cloud Security</h3>
+                    <ul>
+                        <li>AWS IAM / Security Groups</li>
+                        <li>CloudTrail / VPC Flow Logs</li>
+                        <li>Security Hub / Config</li>
+                        <li>KMS / Secrets Manager</li>
+                        <li>Container Security</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
                 </div>
-                <h3>Cloud Security</h3>
-                <ul>
-                    <li>AWS IAM / Security Groups</li>
-                    <li>CloudTrail / VPC Flow Logs</li>
-                    <li>Security Hub / Config</li>
-                    <li>KMS / Secrets Manager</li>
-                    <li>Container Security</li>
-                    <li>Infrastructure as Code</li>
-                </ul>
-            </div>
-            <div class="arsenal-item reveal-up" style="--delay: 0.4s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <div class="arsenal-item reveal-up">
+                    <h3>Scripting & Automation</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>Detection Rule Authoring</li>
+                        <li>Log Parsing</li>
+                        <li>Automated Alerting</li>
+                        <li>Security Orchestration</li>
+                    </ul>
                 </div>
-                <h3>Scripting & Automation</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Bash</li>
-                    <li>Detection Rule Authoring</li>
-                    <li>Log Parsing</li>
-                    <li>Automated Alerting</li>
-                    <li>Security Orchestration</li>
-                </ul>
-            </div>
-            <div class="arsenal-item reveal-up" style="--delay: 0.5s">
-                <div class="arsenal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="arsenal-item reveal-up">
+                    <h3>Systems</h3>
+                    <ul>
+                        <li>Linux Administration</li>
+                        <li>Windows Server / AD</li>
+                        <li>Docker</li>
+                        <li>Prometheus / Grafana</li>
+                        <li>Git / CI/CD Security</li>
+                        <li>Terraform</li>
+                    </ul>
                 </div>
-                <h3>Systems</h3>
-                <ul>
-                    <li>Linux Administration</li>
-                    <li>Windows Server / AD</li>
-                    <li>Docker</li>
-                    <li>Prometheus / Grafana</li>
-                    <li>Git / CI/CD Security</li>
-                    <li>Terraform</li>
-                </ul>
             </div>
         </div>
     </section>
 
     <section class="section" id="ops">
-        <div class="section-header">
-            <span class="section-tag">// OPERATIONS LOG</span>
-            <h2 class="section-title reveal-text">Experience</h2>
-        </div>
-        <div class="ops-timeline">
-            <div class="ops-item reveal-up" style="--delay: 0s">
-                <div class="ops-date">
-                    <span class="ops-year">2024</span>
-                    <span class="ops-range">Apr - Present</span>
+        <div class="section-inner">
+            <span class="eyebrow accent">OPERATIONS LOG</span>
+            <h2 class="heading reveal-up">Experience</h2>
+            <div class="ops-timeline">
+                <div class="ops-item reveal-up">
+                    <div class="ops-date">
+                        <span class="ops-year">2024</span>
+                        <span class="ops-range">Apr – Present</span>
+                    </div>
+                    <div class="ops-content">
+                        <span class="ops-status">ACTIVE</span>
+                        <h3>Network & Systems Administrator</h3>
+                        <span class="ops-org">Eloho</span>
+                        <ul>
+                            <li>Built security monitoring and incident response workflows from scratch</li>
+                            <li>Monthly security assessments with enforced remediation timelines</li>
+                            <li>Deployed endpoint protection, IDS, firewall rules, network security policies</li>
+                            <li>Handled real incidents: brute force via IDS, compromised accounts, USB control</li>
+                            <li>Zero security incidents across all client environments since audit</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="ops-content">
-                    <div class="ops-status active">ACTIVE</div>
-                    <h3>Network & Systems Administrator</h3>
-                    <span class="ops-org">Eloho</span>
-                    <ul>
-                        <li>Built security monitoring and incident response workflows from scratch</li>
-                        <li>Monthly security assessments with enforced remediation timelines</li>
-                        <li>Deployed endpoint protection, IDS, firewall rules, network security policies</li>
-                        <li>Handled real incidents: brute force via IDS, compromised accounts, USB control</li>
-                        <li>Zero security incidents across all client environments since audit</li>
-                    </ul>
+                <div class="ops-item reveal-up">
+                    <div class="ops-date">
+                        <span class="ops-year">2022</span>
+                        <span class="ops-range">Jan – Mar 2024</span>
+                    </div>
+                    <div class="ops-content">
+                        <h3>IT Support Technician</h3>
+                        <span class="ops-org">Elpris Kenya</span>
+                        <ul>
+                            <li>Multi-layered security frameworks across 15 independent client sites</li>
+                            <li>Ransomware recovery: isolated, assessed, restored from backup, hardened</li>
+                            <li>Automated alerting for suspicious activity detection</li>
+                            <li>95% resolution rate, zero client churn</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="ops-item reveal-up" style="--delay: 0.15s">
-                <div class="ops-date">
-                    <span class="ops-year">2022</span>
-                    <span class="ops-range">Jan - Mar 2024</span>
+                <div class="ops-item reveal-up">
+                    <div class="ops-date">
+                        <span class="ops-year">2022</span>
+                        <span class="ops-range">Nov – Dec</span>
+                    </div>
+                    <div class="ops-content">
+                        <h3>DevOps Intern</h3>
+                        <span class="ops-org">HNG Internship (Remote)</span>
+                        <ul>
+                            <li>Security-first IAM policies and network segmentation on AWS</li>
+                            <li>CI/CD pipelines with security gates and automated testing</li>
+                            <li>Reduced AWS costs ~33% through right-sizing and usage analysis</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="ops-content">
-                    <h3>IT Support Technician</h3>
-                    <span class="ops-org">Elpris Kenya</span>
-                    <ul>
-                        <li>Multi-layered security frameworks across 15 independent client sites</li>
-                        <li>Ransomware recovery: isolated, assessed, restored from backup, hardened</li>
-                        <li>Automated alerting for suspicious activity detection</li>
-                        <li>95% resolution rate, zero client churn</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ops-item reveal-up" style="--delay: 0.3s">
-                <div class="ops-date">
-                    <span class="ops-year">2022</span>
-                    <span class="ops-range">Nov - Dec</span>
-                </div>
-                <div class="ops-content">
-                    <h3>DevOps Intern</h3>
-                    <span class="ops-org">HNG Internship (Remote)</span>
-                    <ul>
-                        <li>Security-first IAM policies and network segmentation on AWS</li>
-                        <li>CI/CD pipelines with security gates and automated testing</li>
-                        <li>Reduced AWS costs ~33% through right-sizing and usage analysis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ops-item reveal-up" style="--delay: 0.45s">
-                <div class="ops-date">
-                    <span class="ops-year">2017</span>
-                    <span class="ops-range">Jun - Dec</span>
-                </div>
-                <div class="ops-content">
-                    <h3>IT Intern</h3>
-                    <span class="ops-org">United Nations Office at Nairobi</span>
-                    <ul>
-                        <li>500+ users supported under UN enterprise security standards</li>
-                        <li>100% network uptime for critical operations</li>
-                        <li>Enterprise access controls, data protection, compliance</li>
-                    </ul>
+                <div class="ops-item reveal-up">
+                    <div class="ops-date">
+                        <span class="ops-year">2017</span>
+                        <span class="ops-range">Jun – Dec</span>
+                    </div>
+                    <div class="ops-content">
+                        <h3>IT Intern</h3>
+                        <span class="ops-org">United Nations Office at Nairobi</span>
+                        <ul>
+                            <li>500+ users supported under UN enterprise security standards</li>
+                            <li>100% network uptime for critical operations</li>
+                            <li>Enterprise access controls, data protection, compliance</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-dark" id="projects">
-        <div class="section-header">
-            <span class="section-tag">// DEPLOYMENTS</span>
-            <h2 class="section-title reveal-text">Projects</h2>
-        </div>
-        <div class="projects-mosaic">
-            <a href="https://github.com/lewisawe/PE-URL-Shortner" target="_blank" class="project-tile large reveal-up" style="--delay: 0s">
-                <div class="project-badge">MLH WINNER</div>
-                <h3>Kadi</h3>
-                <p>Won Incident Response category. Full observability: Prometheus, Grafana, Alertmanager. 0% error rate at 500 concurrent users. Complete runbook and failure mode docs.</p>
-                <div class="project-stack">
-                    <span>Prometheus</span><span>Grafana</span><span>Docker</span><span>k6</span>
-                </div>
-            </a>
-            <a href="https://github.com/lewisawe/chama" target="_blank" class="project-tile reveal-up" style="--delay: 0.1s">
-                <div class="project-badge">SECURITY LEAD</div>
-                <h3>ChamaPesa</h3>
-                <p>Security lead on 6-person team. Threat modeling, secure architecture, secrets management, CI/CD security review.</p>
-                <div class="project-stack">
-                    <span>AWS</span><span>Terraform</span><span>Secrets Mgr</span>
-                </div>
-            </a>
-            <a href="https://github.com/lewisawe/Guardian-" target="_blank" class="project-tile reveal-up" style="--delay: 0.2s">
-                <h3>Guardian</h3>
-                <p>Security monitoring and protection system. Automated threat detection and alerting.</p>
-                <div class="project-stack">
-                    <span>Python</span><span>Monitoring</span>
-                </div>
-            </a>
-            <a href="https://github.com/lewisawe/prisma-cloud-devsecops-workshop" target="_blank" class="project-tile reveal-up" style="--delay: 0.3s">
-                <h3>Prisma Cloud DevSecOps</h3>
-                <p>Infrastructure security scanning, policy-as-code, compliance automation.</p>
-                <div class="project-stack">
-                    <span>Prisma</span><span>Terraform</span><span>HCL</span>
-                </div>
-            </a>
-            <a href="https://github.com/lewisawe/agent-containment-protocol" target="_blank" class="project-tile reveal-up" style="--delay: 0.4s">
-                <h3>Agent Containment Protocol</h3>
-                <p>Automated containment and isolation for compromised systems.</p>
-                <div class="project-stack">
-                    <span>TypeScript</span><span>IR</span>
-                </div>
-            </a>
-            <a href="https://github.com/lewisawe/incident-runbook" target="_blank" class="project-tile reveal-up" style="--delay: 0.5s">
-                <h3>Incident Runbook</h3>
-                <p>Structured IR procedures for SOC teams. Standardized response playbooks.</p>
-                <div class="project-stack">
-                    <span>TypeScript</span><span>SOC</span>
-                </div>
-            </a>
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <span class="eyebrow accent">DEPLOYMENTS</span>
+            <h2 class="heading reveal-up">Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/lewisawe/PE-URL-Shortner" target="_blank" class="project-card large reveal-up">
+                    <span class="project-badge">MLH WINNER</span>
+                    <h3>Kadi</h3>
+                    <p>Won Incident Response category. Full observability: Prometheus, Grafana, Alertmanager. 0% error rate at 500 concurrent users.</p>
+                    <div class="project-stack">
+                        <span>Prometheus</span><span>Grafana</span><span>Docker</span><span>k6</span>
+                    </div>
+                </a>
+                <a href="https://github.com/lewisawe/chama" target="_blank" class="project-card reveal-up">
+                    <span class="project-badge">SECURITY LEAD</span>
+                    <h3>ChamaPesa</h3>
+                    <p>Security lead on 6-person team. Threat modeling, secure architecture, secrets management.</p>
+                    <div class="project-stack">
+                        <span>AWS</span><span>Terraform</span><span>Secrets Mgr</span>
+                    </div>
+                </a>
+                <a href="https://github.com/lewisawe/Guardian-" target="_blank" class="project-card reveal-up">
+                    <h3>Guardian</h3>
+                    <p>Security monitoring and protection system. Automated threat detection and alerting.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Monitoring</span>
+                    </div>
+                </a>
+                <a href="https://github.com/lewisawe/prisma-cloud-devsecops-workshop" target="_blank" class="project-card reveal-up">
+                    <h3>Prisma Cloud DevSecOps</h3>
+                    <p>Infrastructure security scanning, policy-as-code, compliance automation.</p>
+                    <div class="project-stack">
+                        <span>Prisma</span><span>Terraform</span><span>HCL</span>
+                    </div>
+                </a>
+                <a href="https://github.com/lewisawe/agent-containment-protocol" target="_blank" class="project-card reveal-up">
+                    <h3>Agent Containment Protocol</h3>
+                    <p>Automated containment and isolation for compromised systems.</p>
+                    <div class="project-stack">
+                        <span>TypeScript</span><span>IR</span>
+                    </div>
+                </a>
+                <a href="https://github.com/lewisawe/incident-runbook" target="_blank" class="project-card reveal-up">
+                    <h3>Incident Runbook</h3>
+                    <p>Structured IR procedures for SOC teams. Standardized response playbooks.</p>
+                    <div class="project-stack">
+                        <span>TypeScript</span><span>SOC</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
     <section class="section" id="intel">
-        <div class="section-header">
-            <span class="section-tag">// INTELLIGENCE</span>
-            <h2 class="section-title reveal-text">Writeups & Certs</h2>
-        </div>
-        <div class="intel-layout">
-            <div class="intel-writeups">
-                <h3 class="intel-subtitle">CTF Walkthroughs</h3>
-                <div class="writeup-feed">
-                    <a href="https://lewisawe.hashnode.dev/what-happens-when-you-red-team-your-own-agent" target="_blank" class="writeup-entry reveal-up" style="--delay: 0s">
-                        <span class="writeup-tag research">RESEARCH</span>
-                        <span class="writeup-name">What Happens When You Red-Team Your Own Agent</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/juicy-details-thm-challenge-room-walkthrough" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.05s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">Juicy Details - Challenge Room Walkthrough</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/hunt-me-ii-typo-squatters-thm-walkthrough" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.1s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">Hunt Me II: Typo Squatters</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/slingshot-tryhackme-walk-through" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.15s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">Slingshot Walkthrough</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/fixit-try-hack-me-walk-through" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.2s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">Fixit Walkthrough</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/hunt-me-i-payment-collectors-try-hack-me-walk-through" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.25s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">Hunt Me I: Payment Collectors</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/javascript-de-obfuscation-htb-walkthrough" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.3s">
-                        <span class="writeup-tag htb">HTB</span>
-                        <span class="writeup-name">JavaScript De-obfuscation</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/introduction-to-malware-analysis-skills-assement-htb" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.35s">
-                        <span class="writeup-tag htb">HTB</span>
-                        <span class="writeup-name">Introduction to Malware Analysis</span>
-                    </a>
-                    <a href="https://lewisawe.hashnode.dev/sighunt-tryhackme-walk-through" target="_blank" class="writeup-entry reveal-up" style="--delay: 0.4s">
-                        <span class="writeup-tag thm">THM</span>
-                        <span class="writeup-name">SigHunt Walkthrough</span>
-                    </a>
-                </div>
-            </div>
-            <div class="intel-certs">
-                <h3 class="intel-subtitle">Certifications</h3>
-                <div class="cert-stack">
-                    <div class="cert-item highlight reveal-up" style="--delay: 0.1s">
-                        <span class="cert-badge">AWS</span>
-                        <span class="cert-name">Security Specialty</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.15s">
-                        <span class="cert-badge thm">THM</span>
-                        <span class="cert-name">SOC Level 1</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.2s">
-                        <span class="cert-badge thm">THM</span>
-                        <span class="cert-name">SOC Level 2</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.25s">
-                        <span class="cert-badge htb">HTB</span>
-                        <span class="cert-name">SOC Analyst Path</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.3s">
-                        <span class="cert-badge cisco">CISCO</span>
-                        <span class="cert-name">CCNA</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.35s">
-                        <span class="cert-badge">AWS</span>
-                        <span class="cert-name">Solutions Architect Associate</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.4s">
-                        <span class="cert-badge">AWS</span>
-                        <span class="cert-name">CloudOps Engineer Associate</span>
-                    </div>
-                    <div class="cert-item reveal-up" style="--delay: 0.45s">
-                        <span class="cert-badge cncf">CNCF</span>
-                        <span class="cert-name">KCNA</span>
+        <div class="section-inner">
+            <span class="eyebrow accent">INTELLIGENCE</span>
+            <h2 class="heading reveal-up">Writeups & Certs</h2>
+            <div class="intel-grid">
+                <div class="intel-writeups reveal-up">
+                    <h3 class="intel-subtitle">CTF Walkthroughs</h3>
+                    <div class="writeup-feed">
+                        <a href="https://lewisawe.hashnode.dev/what-happens-when-you-red-team-your-own-agent" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">RESEARCH</span>
+                            <span>What Happens When You Red-Team Your Own Agent</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/juicy-details-thm-challenge-room-walkthrough" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>Juicy Details - Challenge Room Walkthrough</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/hunt-me-ii-typo-squatters-thm-walkthrough" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>Hunt Me II: Typo Squatters</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/slingshot-tryhackme-walk-through" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>Slingshot Walkthrough</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/fixit-try-hack-me-walk-through" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>Fixit Walkthrough</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/hunt-me-i-payment-collectors-try-hack-me-walk-through" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>Hunt Me I: Payment Collectors</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/javascript-de-obfuscation-htb-walkthrough" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">HTB</span>
+                            <span>JavaScript De-obfuscation</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/introduction-to-malware-analysis-skills-assement-htb" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">HTB</span>
+                            <span>Introduction to Malware Analysis</span>
+                        </a>
+                        <a href="https://lewisawe.hashnode.dev/sighunt-tryhackme-walk-through" target="_blank" class="writeup-entry">
+                            <span class="writeup-tag">THM</span>
+                            <span>SigHunt Walkthrough</span>
+                        </a>
                     </div>
                 </div>
-                <a href="https://credly.com/users/lewisawe" target="_blank" class="verify-link">Verify on Credly &nearr;</a>
+                <div class="intel-certs reveal-up">
+                    <h3 class="intel-subtitle">Certifications</h3>
+                    <div class="cert-stack">
+                        <div class="cert-item highlight">
+                            <span class="cert-badge">AWS</span>
+                            <span>Security Specialty</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">THM</span>
+                            <span>SOC Level 1</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">THM</span>
+                            <span>SOC Level 2</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">HTB</span>
+                            <span>SOC Analyst Path</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">CISCO</span>
+                            <span>CCNA</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">AWS</span>
+                            <span>Solutions Architect Associate</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">AWS</span>
+                            <span>CloudOps Engineer Associate</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">CNCF</span>
+                            <span>KCNA</span>
+                        </div>
+                    </div>
+                    <a href="https://credly.com/users/lewisawe" target="_blank" class="verify-link">Verify on Credly ↗</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-contact" id="contact">
-        <div class="contact-inner">
-            <div class="section-tag">// ESTABLISH CONNECTION</div>
-            <h2 class="contact-title reveal-text">Let's Talk Security</h2>
-            <p class="contact-subtitle reveal-up">Open to SOC Analyst, Security Engineer, and Cybersecurity roles.</p>
-            <div class="contact-grid reveal-up" style="--delay: 0.2s">
+    <section class="section" id="contact">
+        <div class="section-inner contact-inner">
+            <span class="eyebrow">ESTABLISH CONNECTION</span>
+            <h2 class="display-headline contact-headline reveal-up">Let's Talk<br>Security</h2>
+            <p class="body-text reveal-up">Open to SOC Analyst, Security Engineer, and Cybersecurity roles.</p>
+            <div class="contact-grid reveal-up">
                 <a href="https://linkedin.com/in/lewisawe" target="_blank" class="contact-card">
-                    <span class="contact-proto">HTTPS://</span>
-                    <span class="contact-dest">linkedin.com/in/lewisawe</span>
+                    <span>linkedin.com/in/lewisawe</span>
                 </a>
                 <a href="https://github.com/lewisawe" target="_blank" class="contact-card">
-                    <span class="contact-proto">HTTPS://</span>
-                    <span class="contact-dest">github.com/lewisawe</span>
+                    <span>github.com/lewisawe</span>
                 </a>
                 <a href="https://lewisawe.hashnode.dev" target="_blank" class="contact-card">
-                    <span class="contact-proto">HTTPS://</span>
-                    <span class="contact-dest">lewisawe.hashnode.dev</span>
+                    <span>lewisawe.hashnode.dev</span>
                 </a>
             </div>
         </div>
@@ -441,7 +394,6 @@
 
     <footer class="footer">
         <span>&copy; 2026 Lewis Sawe</span>
-        <span class="footer-tagline">Built with caffeine and paranoia.</span>
     </footer>
 
     <script src="script.js"></script>
